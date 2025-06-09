@@ -1,0 +1,120 @@
+body {
+    padding-top: 56px;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Стили для печати */
+/* Стили для печати */
+.print-only {
+    display: none;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+    .print-only {
+        display: block;
+    }
+    body {
+        padding: 0;
+        background: white;
+        font-size: 12pt;
+    }
+    .container {
+        width: auto;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    /* Улучшаем читаемость при печати */
+    .print-only p {
+        font-size: 14pt;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    .print-only h3 {
+        font-size: 18pt;
+        margin-bottom: 10px;
+    }
+    
+    .print-only small {
+        font-size: 10pt;
+    }
+    
+    /* Центрируем содержимое */
+    .print-only {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+/* Стили для кнопки выхода */
+.btn-outline-light {
+    border-color: rgba(255,255,255,0.5);
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+/* Иконка выхода */
+.bi-box-arrow-right {
+    margin-right: 5px;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для кнопки выхода */
+.btn-outline-light {
+    border-color: rgba(255,255,255,0.5);
+    color: white;
+    transition: all 0.3s ease;
+    margin-left: auto; /* Выравнивание вправо */
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+/* Иконка выхода */
+.bi-box-arrow-right {
+    margin-right: 5px;
+}
+
+/* Контейнер для выравнивания */
+.d-flex {
+    display: flex;
+    align-items: center;
